@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <link href="/src/input.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #hero-section{
+    background-image: url('/src/assets/images/restaurat7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid h-[100%] relative">
+      <!-- hero section  -->
+      <section
+        id="hero-section"
+        class="relative h-[100%] max-h-[700px] w-[100%] flex flex-col"
+      >
+        <!-- navbar section  -->
+        <header class="relative">
+          <nav
+            class="w-[100%] bg-black md:bg-transparent px-[20px] md:px-[40px] py-[30px] flex justify-center md:justify-between items-center text-white"
+          >
+            <div
+              id="hamburger-button"
+              class="absolute top-6 left-4 bg-transparent text-2xl md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="logo-wrapper">
+              <img
+                src="/src/assets/images/logo bridge.png"
+                alt="logo"
+                height="100px"
+              />
+            </div>
+            <ul
+              id="nav-items"
+              class="h-0 md:h-auto overflow-hidden flex transiton-all duration-300 ease-in text-white font-medium text-lg absolute mt-[93px] md:mt-0 bg-black w-[100%] left-0 top-0 md:bg-transparent items-center justify-center md:relative md:w-[auto]"
+            >
+              <div
+                id="nav-list"
+                class="flex px-4 py-4 gap-8 tracking-wider flex-col md:flex-row text-center"
+              >
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 "
+                >
+                  <a href="index.html">Home</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 "
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 "
+                >
+                  <a href="menu.html">Menu</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="reservation.html">Reservation</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 active"
+                >
+                  <a href="contact.html">Contact</a>
+                </li>
+              </div>
+            </ul>
+            <div id="book-table" class="hidden md:block">
+              <button
+                class="bg-transparent px-7 py-3 border-2 border-white hover:bg-gray-100 duration-200 transition-all hover:text-gray-400 tracking-widest"
+              >
+                <a href="reservation.html">Book a table</a>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <!-- navbar end  -->
+
+        <!-- hero body  -->
+        <div
+          class="w-full px-4 flex flex-grow flex-col gap-6 justify-center items-center text-white text-center"
+        >
+            <h1 class="tracking-wider text-5xl">Contact</h1>
+        </div>
+        <!-- hero body end   -->
+      </section>
+      <!-- hero section end  -->
+
+      <!-- contact section  -->
+      <section class="py-28 bg-black px-10 space-y-28 text-white md:px-20 lg:columns-2 lg:space-y-0">
+
+        <div class="bridge flex flex-col space-y-3 md:w-full">
+            <h2 class="font-mono text-[17px]">Contact us</h2>
+            <h1 class="font-serif text-3xl">Get in touch</h1>
+            <p class="text-[14px] md:pr-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium nulla ducimus porro adipisci .</p>
+            <div class="logo-and-time flex flex-col space-y-5 text-[14px] tracking-wider relative top-3">
+                <div class="flex space-x-5 items-center">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Mon-Sun: 09am-09pm</span>
+                </div>
+                <div class="flex space-x-5 items-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Bhandara-5, Chitwan</span>
+                </div>
+                <div class="flex space-x-5 items-center">
+                    <i class="fa-regular fa-map"></i>
+                    <span>301-242-34001, 2301-342-2345</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="flex flex-col space-y-3"> 
+            <input type="text" placeholder="Your message" class="h-32 border-white border-opacity-40 border-2 px-3 py-2 bg-transparent outline-none focus:border-opacity-70">
+            <input type="text" placeholder="Address information" class="h-16 border-white border-opacity-40 border-2 px-3 py-2 bg-transparent outline-none focus:border-opacity-70" required="">
+            <input type="Email" placeholder="Your E-mail" class="h-16 border-white border-opacity-40 border-2 px-3 py-2 bg-transparent outline-none focus:border-opacity-70" required="">
+            <button type="submit" class="px-5 py-3 border-white border-[1px] text-white w-28 relative top-2">Submit</button>
+        </form>
+    </section>
+      <!-- contact section end -->
+
+      <!-- below image  -->
+      <div class="h-56">
+        <img src="/src/assets/images/restaurant8.jpg" alt="" class="object-cover h-full w-full">
+    </div>
+      <!-- below image end  -->
+      <!-- footer  -->
+       <div class="flex flex-col md:flex-row gap-10 bg-black py-32 px-8 md:px-14">
+          <div class="basis-1/2 flex flex-col gap-8">
+            <div>
+              <img src="/src/assets/images/logo bridge.png" alt="logo" height="70px">
+            </div>
+            <p class="text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo veniam tenetur praesentium aspernatur </p>
+            <div class="flex flex-col gap-5 text-white tracking-wide font-sans text-sm">
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>Mon-Sun: 09am-09pm</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Bhandara-5, Chitwan</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-map"></i></span>
+                  <span>301-242-34001, 2301-342-2345</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="basis-1/2 text-white flex flex-col gap-7">
+              <h1 class="tracking-wide text-3xl font-medium">Pages</h1>
+              <div class="flex flex-col gap-5">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservation</a>
+              </div>
+          </div>
+       </div>
+      <!-- footer end -->
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navItem = document.getElementById("nav-items");
+        const navList = document.getElementById("nav-list");
+        const navLinks = navList.querySelectorAll("li");
+        document
+          .getElementById("hamburger-button")
+          .addEventListener("click", () => {
+            if (navItem.style.height) {
+              navItem.style.height = null;
+            } else {
+              navItem.style.height =
+                navItem.firstElementChild.scrollHeight + "px";
+            }
+          });
+
+        window.addEventListener("resize", () => {
+          navItem.style.height = "auto";
+        });
+
+        navLinks.forEach((element) => {
+          element.addEventListener("click", () => {
+            navLinks.forEach((element) => element.classList.remove("active"));
+            element.classList.add("active");
+          });
+        });
+
+       
+      });
+    </script>
+  </body>
+</html>

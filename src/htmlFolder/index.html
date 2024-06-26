@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <link href="/src/input.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container-fluid h-[100%] relative">
+      <!-- hero section  -->
+      <section
+        id="hero-section"
+        class="relative h-[100%] max-h-[700px] w-[100%] flex flex-col"
+      >
+        <!-- navbar section  -->
+        <header class="relative">
+          <nav
+            class="w-[100%] bg-black md:bg-transparent px-[20px] md:px-[40px] py-[30px] flex justify-center md:justify-between items-center text-white"
+          >
+            <div
+              id="hamburger-button"
+              class="absolute top-6 left-4 bg-transparent text-2xl md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="logo-wrapper">
+              <img
+                src="/src/assets/images/logo bridge.png"
+                alt="logo"
+                height="100px"
+              />
+            </div>
+            <ul
+              id="nav-items"
+              class="h-0 md:h-auto overflow-hidden flex transiton-all duration-300 ease-in text-white font-medium text-lg absolute mt-[93px] md:mt-0 bg-black w-[100%] left-0 top-0 md:bg-transparent items-center justify-center md:relative md:w-[auto]"
+            >
+              <div
+                id="nav-list"
+                class="flex px-4 py-4 gap-8 tracking-wider flex-col md:flex-row text-center"
+              >
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 active"
+                >
+                  <a href="index.html">Home</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="menu.html">Menu</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="reservation.html">Reservation</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="contact.html">Contact</a>
+                </li>
+              </div>
+            </ul>
+            <div id="book-table" class="hidden md:block">
+              <button
+                class="bg-transparent px-7 py-3 border-2 border-white hover:bg-gray-100 duration-200 transition-all hover:text-gray-400 tracking-widest"
+              >
+                <a href="reservation.html">Book a table</a>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <!-- navbar end  -->
+
+        <!-- hero body  -->
+        <div
+          class="w-full px-4 flex flex-grow flex-col gap-6 justify-center items-center text-white text-center"
+        >
+          <h3 class="text-2xl text-white tracking-widest font-medium">
+            Exclusive drink service
+          </h3>
+          <h1 class="text-6xl tracking-wider">Cocktail stage evenings</h1>
+          <button
+            class="bg-transparent px-6 py-2 border-2 border-white text-xl"
+          >
+            <a href="menu.html">View more</a>
+          </button>
+        </div>
+        <!-- hero body end   -->
+      </section>
+      <!-- hero section end  -->
+
+      <!-- below hero  -->
+      <section class="py-5 bg-black">
+        <div
+          class="flex flex-col lg:flex-row gap-10 items-center px-4 py-8 text-white"
+        >
+          <div class="flex flex-col gap-5 text-center px-5">
+            <h3 class="tracking-widest text-xl header">visit a bar</h3>
+            <h2 class="tracking-wider text-5xl py-2">Open Hours</h2>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>Monday - Friday:</p>
+              <p>4:00pm - 1:00am</p>
+            </h3>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>Saturday:</p>
+              <p>4:00pm - 3:00am</p>
+            </h3>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>Sunday:</p>
+              <p>4:00pm - 2:00am</p>
+            </h3>
+            <h3 class="top-8 text-center text-[17px] font-serif">visit us</h3>
+          </div>
+
+          <div class="flex-grow relative">
+            <img
+              src="/src/assets/images/restaurant1.jpg"
+              alt="restaurant"
+              class="h-auto w-full max-w-[600px] max-h-[500px] object-cover mx-auto"
+            />
+          </div>
+
+          <div class="flex flex-col gap-5 text-center px-5">
+            <h3 class="tracking-widest text-xl header">The best offer</h3>
+            <h2 class="tracking-wider text-5xl py-2">Happy Hour</h2>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>Monday - Friday:</p>
+              <p>4:00pm - 7:00pm</p>
+            </h3>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>20% off all wine by glass</p>
+              <p>15% of all cocktails</p>
+            </h3>
+            <h3
+              class="text-white font-serif text-center text-[15px] tracking-wider font-extralight flex-col space-y-2"
+            >
+              <p>25% off selected craft beer</p>
+              <p>10% off all spirits</p>
+            </h3>
+            <h3 class="top-8 text-center text-[15px] font-serif">
+              <a href="menu.html">View more</a>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- below hero end -->
+
+      <!-- parallax div  -->
+      <div id="parallex-div"></div>
+      <!-- parallax div end -->
+
+      <!-- demo menu section  -->
+      <section class="py-36 bg-black px-5 sm:px-8 md:px-20">
+        <div class="flex flex-col gap-20">
+          <div id="header-part" class="text-center text-white space-y-5">
+            <h2 class="header text-xl tracking-widest">This week's special</h2>
+            <h1 class="tracking-widest text-5xl small-heading">We recommend</h1>
+            <p class="font-light text-xs px-10 sm:px-28 lg:px-52">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              qui adipisci sunt beatae omnis possimus quod veritatis distinctio
+              quaerat quas aliquid voluptate necessitatibus, itaque odit
+              officia! Itaque deleniti reiciendis illum?
+            </p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row lg:justify-between gap-10">
+            <div class="flex flex-col my-auto basis-1/2 gap-5">
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-white">
+                  <p class="text-2xl tracking-widest">Coco spine</p>
+                  <div
+                    class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                  ></div>
+                  <p class="text-2xl tracking-wide">$19</p>
+                </div>
+                <div>
+                  <h2 class="text-[15px] text-white">
+                    Captain Morgan spiced rum, pineapple </h2>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-white">
+                  <p class="text-2xl tracking-widest">Coco spine</p>
+                  <div
+                    class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                  ></div>
+                  <p class="text-2xl tracking-wide">$19</p>
+                </div>
+                <div>
+                  <h2 class="text-[15px] text-white">
+                    Captain Morgan spiced rum, pineapple </h2>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-white">
+                  <p class="text-2xl tracking-widest">Coco spine</p>
+                  <div
+                    class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                  ></div>
+                  <p class="text-2xl tracking-wide">$19</p>
+                </div>
+                <div>
+                  <h2 class="text-[15px] text-white">
+                    Captain Morgan spiced rum, pineapple </h2>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-white">
+                  <p class="text-2xl tracking-widest">Coco spine</p>
+                  <div
+                    class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                  ></div>
+                  <p class="text-2xl tracking-wide">$19</p>
+                </div>
+                <div>
+                  <h2 class="text-[15px] text-white">
+                    Captain Morgan spiced rum, pineapple </h2>
+                </div>
+              </div>
+            
+              <button class="bg-transparent border-2 border-white px-6 py-2 w-fit mx-auto text-white mt-[50px]"><a href="menu.html">View more</a></button>
+            </div>
+
+            <div class="lg:basis-1/2  relative">
+                <img src="/src/assets/images/restaurant4.jpg" alt="restaurant" class="h-full w-full max-h-[500px] object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- demo menu section end  -->
+
+      <!-- image gallery section  -->
+       <div class="flex flex-col md:flex-row gap-3 bg-black px-3">
+        <div class="basis-1/3 relative">
+          <img src="/src/assets/images/restaurant9.jpg" alt="restaurant" class="w-full h-auto max-h-[500px] object-cover">
+        </div>
+        <div class="basis-1/3 relative">
+          <img src="/src/assets/images/restaurat7.jpg" alt="restaurant" class="w-full h-auto max-h-[500px] object-cover">
+        </div>
+        <div class="basis-1/3 relative">
+          <img src="/src/assets/images/restaurant10.jpg" alt="restaurant" class="w-full h-auto max-h-[500px] object-cover">
+        </div>
+       </div>
+      <!-- image gallery section end -->
+
+      <!-- footer  -->
+       <div class="flex flex-col md:flex-row gap-10 bg-black py-32 px-8 md:px-14">
+          <div class="basis-1/2 flex flex-col gap-8">
+            <div>
+              <img src="/src/assets/images/logo bridge.png" alt="logo" height="70px">
+            </div>
+            <p class="text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo veniam tenetur praesentium aspernatur </p>
+            <div class="flex flex-col gap-5 text-white tracking-wide font-sans text-sm">
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>Mon-Sun: 09am-09pm</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Bhandara-5, Chitwan</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-map"></i></span>
+                  <span>301-242-34001, 2301-342-2345</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="basis-1/2 text-white flex flex-col gap-7">
+              <h1 class="tracking-wide text-3xl font-medium">Pages</h1>
+              <div class="flex flex-col gap-5">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+              </div>
+          </div>
+       </div>
+      <!-- footer end -->
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navItem = document.getElementById("nav-items");
+        const navList = document.getElementById("nav-list");
+        const navLinks = navList.querySelectorAll("li");
+        document
+          .getElementById("hamburger-button")
+          .addEventListener("click", () => {
+            if (navItem.style.height) {
+              navItem.style.height = null;
+            } else {
+              navItem.style.height =
+                navItem.firstElementChild.scrollHeight + "px";
+            }
+          });
+
+        window.addEventListener("resize", () => {
+          navItem.style.height = "auto";
+        });
+
+        navLinks.forEach((element) => {
+          element.addEventListener("click", () => {
+            navLinks.forEach((element) => element.classList.remove("active"));
+            element.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

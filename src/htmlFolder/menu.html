@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <link href="/src/input.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #hero-section{
+    background-image: url('/src/assets/images/restaurant10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#parallex-div{
+    background-image: url('/src/assets/images/restaurant4.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:500px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid h-[100%] relative">
+      <!-- hero section  -->
+      <section
+        id="hero-section"
+        class="relative h-[100%] max-h-[700px] w-[100%] flex flex-col"
+      >
+        <!-- navbar section  -->
+        <header class="relative">
+          <nav
+            class="w-[100%] bg-black md:bg-transparent px-[20px] md:px-[40px] py-[30px] flex justify-center md:justify-between items-center text-white"
+          >
+            <div
+              id="hamburger-button"
+              class="absolute top-6 left-4 bg-transparent text-2xl md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="logo-wrapper">
+              <img
+                src="/src/assets/images/logo bridge.png"
+                alt="logo"
+                height="100px"
+              />
+            </div>
+            <ul
+              id="nav-items"
+              class="h-0 md:h-auto overflow-hidden flex transiton-all duration-300 ease-in text-white font-medium text-lg absolute mt-[93px] md:mt-0 bg-black w-[100%] left-0 top-0 md:bg-transparent items-center justify-center md:relative md:w-[auto]"
+            >
+              <div
+                id="nav-list"
+                class="flex px-4 py-4 gap-8 tracking-wider flex-col md:flex-row text-center"
+              >
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 "
+                >
+                  <a href="index.html">Home</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 "
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200 active"
+                >
+                  <a href="menu.html">Menu</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="reservation.html">Reservation</a>
+                </li>
+                <li
+                  class="relative no-underline hover:text-gray-500 transition-all duration-200"
+                >
+                  <a href="contact.html">Contact</a>
+                </li>
+              </div>
+            </ul>
+            <div id="book-table" class="hidden md:block">
+              <button
+                class="bg-transparent px-7 py-3 border-2 border-white hover:bg-gray-100 duration-200 transition-all hover:text-gray-400 tracking-widest"
+              >
+                <a href="reservation.html">Book a table</a>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <!-- navbar end  -->
+
+        <!-- hero body  -->
+        <div
+          class="w-full px-4 flex flex-grow flex-col gap-6 justify-center items-center text-white text-center"
+        >
+            <h1 class="tracking-wider text-5xl">Menu</h1>
+        </div>
+        <!-- hero body end   -->
+      </section>
+      <!-- hero section end  -->
+
+   <!-- menu section  -->
+    <div class="flex flex-col pb-20 bg-black px-4 sm:px-16">
+        <div>
+            <div class="flex flex-col text-center mt-20 gap-5">
+                <h2 class="text-2xl text-white tracking-widest header">Our choice</h2>
+                <h1 class="text-5xl tracking-wide text-white">Cocktails</h1>
+            </div>
+             <div class="flex flex-col lg:flex-row lg:justify-between gap-24  lg:gap-12 mt-20">
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+             
+                </div>
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="flex flex-col text-center mt-20 gap-5">
+                <h2 class="text-2xl text-white tracking-widest header">Our choice</h2>
+                <h1 class="text-5xl tracking-wide text-white">Cocktails</h1>
+            </div>
+             <div class="flex flex-col lg:flex-row lg:justify-between gap-24  lg:gap-12 mt-20">
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+             
+                </div>
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="flex flex-col text-center mt-20 gap-5">
+                <h2 class="text-2xl text-white tracking-widest header">Our choice</h2>
+                <h1 class="text-5xl tracking-wide text-white">Cocktails</h1>
+            </div>
+             <div class="flex flex-col lg:flex-row lg:justify-between gap-24  lg:gap-12 mt-20">
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+             
+                </div>
+                <div class="flex flex-col my-auto basis-1/2 gap-5">
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-white">
+                      <p class="text-2xl tracking-widest">Coco spine</p>
+                      <div
+                        class="hidden sm:block border-dotted border-b-2 border-[#828383] basis-[60%] h-4 border-opacity-60"
+                      ></div>
+                      <p class="text-2xl tracking-wide">$19</p>
+                    </div>
+                    <div>
+                      <h2 class="text-[15px] text-white">
+                        Captain Morgan spiced rum, pineapple </h2>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+        </div>
+    </div>
+   <!-- menu section end -->
+
+      <!-- parallax div  -->
+      <div id="parallex-div"></div>
+      <!-- parallax div end -->
+
+      <!-- footer  -->
+       <div class="flex flex-col md:flex-row gap-10 bg-black py-32 px-8 md:px-14">
+          <div class="basis-1/2 flex flex-col gap-8">
+            <div>
+              <img src="/src/assets/images/logo bridge.png" alt="logo" height="70px">
+            </div>
+            <p class="text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo veniam tenetur praesentium aspernatur </p>
+            <div class="flex flex-col gap-5 text-white tracking-wide font-sans text-sm">
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>Mon-Sun: 09am-09pm</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Bhandara-5, Chitwan</span>
+                </div>
+                <div class="space-x-4">
+                  <span><i class="fa-regular fa-map"></i></span>
+                  <span>301-242-34001, 2301-342-2345</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="basis-1/2 text-white flex flex-col gap-7">
+              <h1 class="tracking-wide text-3xl font-medium">Pages</h1>
+              <div class="flex flex-col gap-5">
+                <a href="index">Home</a>
+                <a href="about.html">About</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+              </div>
+          </div>
+       </div>
+      <!-- footer end -->
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navItem = document.getElementById("nav-items");
+        const navList = document.getElementById("nav-list");
+        const navLinks = navList.querySelectorAll("li");
+        document
+          .getElementById("hamburger-button")
+          .addEventListener("click", () => {
+            if (navItem.style.height) {
+              navItem.style.height = null;
+            } else {
+              navItem.style.height =
+                navItem.firstElementChild.scrollHeight + "px";
+            }
+          });
+
+        window.addEventListener("resize", () => {
+          navItem.style.height = "auto";
+        });
+
+        navLinks.forEach((element) => {
+          element.addEventListener("click", () => {
+            navLinks.forEach((element) => element.classList.remove("active"));
+            element.classList.add("active");
+          });
+        });
+
+       
+      });
+    </script>
+  </body>
+</html>
